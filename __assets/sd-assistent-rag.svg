@@ -1,0 +1,226 @@
+<svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css"
+     data-diagram-type="SEQUENCE" height="507px" preserveAspectRatio="none"
+     style="width:964px;height:507px;background:#FFFFFF;" version="1.1" viewBox="0 0 964 507" width="964px"
+     zoomAndPan="magnify">
+    <defs/>
+    <g>
+        <g>
+            <title>Client</title>
+            <rect fill="#000000" fill-opacity="0.00000" height="361.5938" width="8" x="28.2651" y="67.2969"/>
+            <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="32" x2="32" y1="67.2969"
+                  y2="428.8906"/>
+        </g>
+        <g>
+            <title>ChatController</title>
+            <rect fill="#000000" fill-opacity="0.00000" height="361.5938" width="8" x="224.1597" y="67.2969"/>
+            <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="227.2148" x2="227.2148"
+                  y1="67.2969" y2="428.8906"/>
+        </g>
+        <g>
+            <title>ChatClient</title>
+            <rect fill="#000000" fill-opacity="0.00000" height="361.5938" width="8" x="379.8862" y="67.2969"/>
+            <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="383.2627" x2="383.2627"
+                  y1="67.2969" y2="428.8906"/>
+        </g>
+        <g>
+            <title>VectorStore</title>
+            <rect fill="#000000" fill-opacity="0.00000" height="361.5938" width="8" x="566.4116" y="67.2969"/>
+            <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="569.9072" x2="569.9072"
+                  y1="67.2969" y2="428.8906"/>
+        </g>
+        <g>
+            <title>IngestionService</title>
+            <rect fill="#000000" fill-opacity="0.00000" height="361.5938" width="8" x="750.4043" y="67.2969"/>
+            <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="754.2271" x2="754.2271"
+                  y1="67.2969" y2="428.8906"/>
+        </g>
+        <g>
+            <title>ChromaDB</title>
+            <rect fill="#000000" fill-opacity="0.00000" height="361.5938" width="8" x="866.3672" y="67.2969"/>
+            <line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="869.5815" x2="869.5815"
+                  y1="67.2969" y2="428.8906"/>
+        </g>
+        <g class="participant participant-head" data-participant="Client">
+            <rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;"
+                  width="54.5303" x="5" y="36"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40.5303"
+                  x="12" y="55.9951">Client
+            </text>
+        </g>
+        <g class="participant participant-tail" data-participant="Client">
+            <rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;"
+                  width="54.5303" x="5" y="427.8906"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40.5303"
+                  x="12" y="447.8857">Client
+            </text>
+        </g>
+        <g class="participant participant-head" data-participant="ChatController">
+            <rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;"
+                  width="115.8896" x="170.2148" y="36"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101.8896"
+                  x="177.2148" y="55.9951">ChatController
+            </text>
+        </g>
+        <g class="participant participant-tail" data-participant="ChatController">
+            <rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;"
+                  width="115.8896" x="170.2148" y="427.8906"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101.8896"
+                  x="177.2148" y="447.8857">ChatController
+            </text>
+        </g>
+        <g class="participant participant-head" data-participant="ChatClient">
+            <rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;"
+                  width="87.2471" x="340.2627" y="36"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73.2471"
+                  x="347.2627" y="55.9951">ChatClient
+            </text>
+        </g>
+        <g class="participant participant-tail" data-participant="ChatClient">
+            <rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;"
+                  width="87.2471" x="340.2627" y="427.8906"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73.2471"
+                  x="347.2627" y="447.8857">ChatClient
+            </text>
+        </g>
+        <g class="participant participant-head" data-participant="VectorStore">
+            <rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;"
+                  width="97.0088" x="521.9072" y="36"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83.0088"
+                  x="528.9072" y="55.9951">VectorStore
+            </text>
+        </g>
+        <g class="participant participant-tail" data-participant="VectorStore">
+            <rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;"
+                  width="97.0088" x="521.9072" y="427.8906"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83.0088"
+                  x="528.9072" y="447.8857">VectorStore
+            </text>
+        </g>
+        <g class="participant participant-head" data-participant="IngestionService">
+            <rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;"
+                  width="130.3545" x="689.2271" y="36"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116.3545"
+                  x="696.2271" y="55.9951">IngestionService
+            </text>
+        </g>
+        <g class="participant participant-tail" data-participant="IngestionService">
+            <rect fill="#E2E2F0" height="30.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;"
+                  width="130.3545" x="689.2271" y="427.8906"/>
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116.3545"
+                  x="696.2271" y="447.8857">IngestionService
+            </text>
+        </g>
+        <g class="participant participant-head" data-participant="ChromaDB">
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75.5713"
+                  x="829.5815" y="63.9951">ChromaDB
+            </text>
+            <path d="M852.3672,15 C852.3672,5 870.3672,5 870.3672,5 C870.3672,5 888.3672,5 888.3672,15 L888.3672,41 C888.3672,51 870.3672,51 870.3672,51 C870.3672,51 852.3672,51 852.3672,41 L852.3672,15 "
+                  fill="#E2E2F0" style="stroke:#181818;stroke-width:1.5;"/>
+            <path d="M852.3672,15 C852.3672,25 870.3672,25 870.3672,25 C870.3672,25 888.3672,25 888.3672,15 "
+                  fill="none" style="stroke:#181818;stroke-width:1.5;"/>
+        </g>
+        <g class="participant participant-tail" data-participant="ChromaDB">
+            <text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75.5713"
+                  x="829.5815" y="440.8857">ChromaDB
+            </text>
+            <path d="M852.3672,454.1875 C852.3672,444.1875 870.3672,444.1875 870.3672,444.1875 C870.3672,444.1875 888.3672,444.1875 888.3672,454.1875 L888.3672,480.1875 C888.3672,490.1875 870.3672,490.1875 870.3672,490.1875 C870.3672,490.1875 852.3672,490.1875 852.3672,480.1875 L852.3672,454.1875 "
+                  fill="#E2E2F0" style="stroke:#181818;stroke-width:1.5;"/>
+            <path d="M852.3672,454.1875 C852.3672,464.1875 870.3672,464.1875 870.3672,464.1875 C870.3672,464.1875 888.3672,464.1875 888.3672,454.1875 "
+                  fill="none" style="stroke:#181818;stroke-width:1.5;"/>
+        </g>
+        <g class="message" data-participant-1="Client" data-participant-2="ChatController">
+            <polygon fill="#181818" points="216.1597,94.4297,226.1597,98.4297,216.1597,102.4297,220.1597,98.4297"
+                     style="stroke:#181818;stroke-width:1;"/>
+            <line style="stroke:#181818;stroke-width:1;" x1="32.2651" x2="222.1597" y1="98.4297" y2="98.4297"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="146.1294"
+                  x="39.2651" y="93.3638">POST /references/abnt
+            </text>
+        </g>
+        <g class="message" data-participant-1="ChatController" data-participant-2="ChatClient">
+            <polygon fill="#181818" points="371.8862,123.5625,381.8862,127.5625,371.8862,131.5625,375.8862,127.5625"
+                     style="stroke:#181818;stroke-width:1;"/>
+            <line style="stroke:#181818;stroke-width:1;" x1="228.1597" x2="377.8862" y1="127.5625" y2="127.5625"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="120.3516"
+                  x="235.1597" y="122.4966">prompt(reference)
+            </text>
+        </g>
+        <g class="message" data-participant-1="ChatClient" data-participant-2="VectorStore">
+            <polygon fill="#181818" points="558.4116,152.6953,568.4116,156.6953,558.4116,160.6953,562.4116,156.6953"
+                     style="stroke:#181818;stroke-width:1;"/>
+            <line style="stroke:#181818;stroke-width:1;" x1="383.8862" x2="564.4116" y1="156.6953" y2="156.6953"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="162.5254"
+                  x="390.8862" y="151.6294">retrieve relevant context
+            </text>
+        </g>
+        <g class="message" data-participant-1="VectorStore" data-participant-2="ChromaDB">
+            <polygon fill="#181818" points="858.3672,181.8281,868.3672,185.8281,858.3672,189.8281,862.3672,185.8281"
+                     style="stroke:#181818;stroke-width:1;"/>
+            <line style="stroke:#181818;stroke-width:1;" x1="570.4116" x2="864.3672" y1="185.8281" y2="185.8281"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="121.9512"
+                  x="577.4116" y="180.7622">query embeddings
+            </text>
+        </g>
+        <g class="message" data-participant-1="ChromaDB" data-participant-2="VectorStore">
+            <polygon fill="#181818" points="581.4116,210.9609,571.4116,214.9609,581.4116,218.9609,577.4116,214.9609"
+                     style="stroke:#181818;stroke-width:1;"/>
+            <line style="stroke:#181818;stroke-width:1;stroke-dasharray:2.0,2.0;" x1="575.4116" x2="869.3672"
+                  y1="214.9609" y2="214.9609"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="100.2803"
+                  x="587.4116" y="209.895">return matches
+            </text>
+        </g>
+        <g class="message" data-participant-1="VectorStore" data-participant-2="ChatClient">
+            <polygon fill="#181818" points="394.8862,240.0938,384.8862,244.0938,394.8862,248.0938,390.8862,244.0938"
+                     style="stroke:#181818;stroke-width:1;"/>
+            <line style="stroke:#181818;stroke-width:1;stroke-dasharray:2.0,2.0;" x1="388.8862" x2="569.4116"
+                  y1="244.0938" y2="244.0938"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="102.4639"
+                  x="400.8862" y="239.0278">provide context
+            </text>
+        </g>
+        <g class="message" data-participant-1="ChatClient" data-participant-2="ChatController">
+            <polygon fill="#181818" points="239.1597,269.2266,229.1597,273.2266,239.1597,277.2266,235.1597,273.2266"
+                     style="stroke:#181818;stroke-width:1;"/>
+            <line style="stroke:#181818;stroke-width:1;stroke-dasharray:2.0,2.0;" x1="233.1597" x2="382.8862"
+                  y1="273.2266" y2="273.2266"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="131.7266"
+                  x="245.1597" y="268.1606">formatted reference
+            </text>
+        </g>
+        <g class="message" data-participant-1="ChatController" data-participant-2="Client">
+            <polygon fill="#181818" points="43.2651,298.3594,33.2651,302.3594,43.2651,306.3594,39.2651,302.3594"
+                     style="stroke:#181818;stroke-width:1;"/>
+            <line style="stroke:#181818;stroke-width:1;stroke-dasharray:2.0,2.0;" x1="37.2651" x2="227.1597"
+                  y1="302.3594" y2="302.3594"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="171.8945"
+                  x="49.2651" y="297.2935">ABNT-formatted reference
+            </text>
+        </g>
+        <path d="M759,315.3594 L759,355.3594 L957,355.3594 L957,325.3594 L947,315.3594 L759,315.3594 " fill="#FEFFDD"
+              style="stroke:#181818;stroke-width:0.5;"/>
+        <path d="M947,315.3594 L947,325.3594 L957,325.3594 L947,315.3594 " fill="#FEFFDD"
+              style="stroke:#181818;stroke-width:0.5;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="177.9756"
+              x="765" y="332.4263">Loads ABNT guidelines PDF
+        </text>
+        <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="168.6826"
+              x="765" y="347.5591">during application startup
+        </text>
+        <g class="message" data-participant-1="IngestionService" data-participant-2="VectorStore">
+            <polygon fill="#181818" points="581.4116,377.7578,571.4116,381.7578,581.4116,385.7578,577.4116,381.7578"
+                     style="stroke:#181818;stroke-width:1;"/>
+            <line style="stroke:#181818;stroke-width:1;" x1="575.4116" x2="753.4043" y1="381.7578" y2="381.7578"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="159.9927"
+                  x="587.4116" y="376.6919">ingest document chunks
+            </text>
+        </g>
+        <g class="message" data-participant-1="VectorStore" data-participant-2="ChromaDB">
+            <polygon fill="#181818" points="858.3672,406.8906,868.3672,410.8906,858.3672,414.8906,862.3672,410.8906"
+                     style="stroke:#181818;stroke-width:1;"/>
+            <line style="stroke:#181818;stroke-width:1;" x1="570.4116" x2="864.3672" y1="410.8906" y2="410.8906"/>
+            <text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="117.5903"
+                  x="577.4116" y="405.8247">store embeddings
+            </text>
+        </g><!--SRC=[TP71JiCm38RlUGeVuL3jtWCIsuI4X61I9-vfuhOHRH8SfuAt9ssXQzTnY1JP_Z__jhqaDifuQHaEhK7BmYz3ZUI3iqokRP6sgQtY7HKxAjB3LVpPrXZOE5iWzKQXq99bAGCc4BbE7lT2J3Z87gxwvd1wAywm8woGq2eCErcclkkgMJTISl09w_bk5jsBItQeNJZDWP39O8_fqs8_65O9Z5yi5cLJXybj3fyHwHkmAr5hO-iW_bAGtQ17ij19LWs6DNBhkZSQv_PBppSMKpbAL4ODyvoRjGooN_hZ_lMStT88wpWDR-g6mLNRQm6yEAd3280w9eUjiHZWT7nAEHqfRG2azwrHSj11u7Jyw0LQ3GDRY6lcvWPcB03jLEo6ULKJxKVu_m1X35qEy0C0]-->
+    </g>
+</svg>

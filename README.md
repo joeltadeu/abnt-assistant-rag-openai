@@ -7,34 +7,8 @@ A Spring Boot application that leverages Retrieval-Augmented Generation (RAG) to
 This application serves as an intelligent assistant for formatting bibliographic references according to ABNT standards. It combines the power of Large Language Models (LLM) with local document knowledge through RAG, ensuring accurate and standard-compliant reference formatting.
 
 ## Architecture
+<img src="__assets/sd-assistent-rag.svg">
 
-```plantuml
-@startuml
-participant Client
-participant ChatController
-participant ChatClient
-participant VectorStore
-participant IngestionService
-database ChromaDB
-
-Client -> ChatController: POST /references/abnt
-ChatController -> ChatClient: prompt(reference)
-ChatClient -> VectorStore: retrieve relevant context
-VectorStore -> ChromaDB: query embeddings
-ChromaDB --> VectorStore: return matches
-VectorStore --> ChatClient: provide context
-ChatClient --> ChatController: formatted reference
-ChatController --> Client: ABNT-formatted reference
-
-note right of IngestionService
-  Loads ABNT guidelines PDF
-  during application startup
-end note
-
-IngestionService -> VectorStore: ingest document chunks
-VectorStore -> ChromaDB: store embeddings
-@enduml
-```
 ## Endpoints
 
 | EndPoint            | Method | Description                                                               |
@@ -43,7 +17,7 @@ VectorStore -> ChromaDB: store embeddings
 
 #### Example
 
-> POST /v2/rerefences/abnt
+> POST /v2/references/abnt
 
 #### Body
 ````json lines
@@ -77,7 +51,6 @@ spring.ai.openai.chat.options.model=gpt-4
 spring.ai.vectorstore.chroma.initialize-schema=true
 spring.ai.vectorstore.chroma.collection-name=abnt-sytle-guideline
 ```
-
 
 ## Build & Run
 

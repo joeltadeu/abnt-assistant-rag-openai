@@ -1,6 +1,9 @@
 package com.ai.abnt.controller;
 
 import com.ai.abnt.model.BibliographicCitation;
+import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.chat.client.advisor.QuestionAnswerAdvisor;
 import org.springframework.ai.chat.prompt.Prompt;
@@ -11,12 +14,8 @@ import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
-
 @RestController
-public class ChatController {
+public class BibliographicCitationController {
   private final ChatClient chatClient;
 
   private final String PROMPT_EN_US =
@@ -27,7 +26,7 @@ public class ChatController {
 
   private final VectorStore vectorStore;
 
-  public ChatController(ChatClient.Builder builder, VectorStore vectorStore) {
+  public BibliographicCitationController(ChatClient.Builder builder, VectorStore vectorStore) {
     this.chatClient = builder.defaultAdvisors(new QuestionAnswerAdvisor(vectorStore)).build();
     this.vectorStore = vectorStore;
   }

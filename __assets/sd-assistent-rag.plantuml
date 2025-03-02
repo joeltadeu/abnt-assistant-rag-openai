@@ -1,0 +1,25 @@
+@startuml
+participant Client
+participant ChatController
+participant ChatClient
+participant VectorStore
+participant IngestionService
+database ChromaDB
+
+Client -> ChatController: POST /references/abnt
+ChatController -> ChatClient: prompt(reference)
+ChatClient -> VectorStore: retrieve relevant context
+VectorStore -> ChromaDB: query embeddings
+ChromaDB --> VectorStore: return matches
+VectorStore --> ChatClient: provide context
+ChatClient --> ChatController: formatted reference
+ChatController --> Client: ABNT-formatted reference
+
+note right of IngestionService
+  Loads ABNT guidelines PDF
+  during application startup
+end note
+
+IngestionService -> VectorStore: ingest document chunks
+VectorStore -> ChromaDB: store embeddings
+@enduml
